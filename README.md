@@ -5,16 +5,16 @@
 To run this project locally, you'll need to have Node.js and npm (or yarn) installed on your machine.
 
 1. Clone this repository:
-   'git clone https://github.com/your-username/your-repository.git'
+   `git clone https://github.com/your-username/your-repository.git`
 
 3. Navigate to the project directory:
-   'cd freedombutchers'
+   `cd freedombutchers`
 
 4. Install dependencies using npm:
-   'npm install'
+   `npm install`
 
    Or if you prefer yarn:
-   'yarn install'
+   `yarn install`
    
 5. Open the `index.html` file in your preferred web browser.
 

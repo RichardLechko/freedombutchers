@@ -1,0 +1,163 @@
+:root {
+  --dark-violet: hsl(257, 27%, 26%);
+  --gray: hsl(0, 0%, 75%);
+
+  --grayish-violet: hsl(260, 7%, 59%);
+
+  --white: #fff;
+  --bodyBg: #303841;
+  --formBg: #343f4b;
+  --textColor: #fff;
+  --primaryColor: #0076a3;
+  --paraColor: #5e6c79;
+  --paraColor: #74828f;
+}
+
+.contact-form {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 5em;
+}
+
+.contact-form h2 {
+  border-bottom: 1px solid black;
+}
+
+.heading,
+.sub-heading {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 2.5em;
+}
+
+.sub-heading {
+  text-align: left;
+}
+
+.contactForm {
+  display: grid;
+  gap: 3em;
+}
+
+form {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.input {
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1em;
+  outline: none;
+  background-color: var(--formBg);
+  color: var(--white);
+  border-radius: 10px;
+  border: 1px solid rgb(53, 53, 53);
+  margin-bottom: 1em;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder {
+  text-transform: capitalize;
+}
+
+.submit {
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--textColor);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.contactMethod {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.method {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.contactIcon {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  width: 70px;
+}
+
+.google-maps {
+  /* Add the following lines */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.google-maps iframe {
+  /* Add the following lines */
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 690px) {
+  .contact-form {
+    width: 100%;
+    padding-top: 3em;
+  }
+
+  .contactForm {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .input,
+  .submit {
+    width: calc(100% - 2em);
+    max-width: none;
+  }
+
+  .google-maps {
+    overflow: hidden;
+  }
+
+  .google-maps iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .contactMethod {
+    padding-left: 2em;
+    margin-top: 1em;
+    font-size: 1.2rem;
+  }
+
+  .method {
+    font-size: 1.5em;
+  }
+
+  .contactIcon {
+    padding-right: 1em;
+    font-size: 1.2em;
+    width: auto;
+  }
+
+  article p {
+    font-size: 0.9em;
+  }
+}

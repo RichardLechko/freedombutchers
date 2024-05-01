@@ -1,0 +1,14 @@
+# Ignore Node.js modules
+node_modules/
+proxy-server/node_modules/
+
+# Ignore build directories
+proxy-server/build/
+proxy-server/dist/
+
+# Ignore .env file inside proxy-server directory
+proxy-server/.env
+
+# Ignore editor/IDE specific files
+.idea/
+.vscode/

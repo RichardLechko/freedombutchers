@@ -39,11 +39,11 @@
         <h2 class="heading">Contact Form</h2>
 
         <div class="contactForm">
-            <form action="https://formspree.io/f/xkndoqdk" method="POST">
-                <input type="text" class="input" placeholder="your name" required />
-                <input type="text" class="input" placeholder="your email" required />
-                <input type="text" class="input" placeholder="your Subject" required />
-                <textarea class="input" cols="30" rows="5" placeholder="Your message..." required></textarea>
+            <form action="process_form.php" method="POST">
+                <input type="text" name="name" class="input" placeholder="Your name" required />
+                <input type="email" name="email" class="input" placeholder="Your email" required />
+                <input type="text" name="subject" class="input" placeholder="Subject" required />
+                <textarea name="message" class="input" cols="30" rows="5" placeholder="Your message..." required></textarea>
                 <input type="submit" class="input submit" value="Send Message" />
             </form>
 

@@ -1,15 +1,30 @@
-// index.mjs
 import express from "express";
 import { fileURLToPath } from "url";
 import path from "path";
 import fetchYelpReviews from "./review.mjs";
+import phpExpress from "php-express";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
 
+// Set up php-express
+const phpExpressEngine = new phpExpress({
+  binPath: "php-8.3.6/php-cgi", // Replace "path/to/php-cgi" with the actual path to your PHP CGI executable
+  root: path.join(__dirname, "freedombutchers"), // Root directory for PHP scripts
+});
+
+app.set("view engine", "php");
+app.set("views", path.join(__dirname, "freedombutchers"));
+
+// Use php-express engine
+app.engine("php", phpExpressEngine.engine);
+
+// Serve static files (HTML, CSS, JavaScript)
 app.use(express.static(path.join(__dirname, "freedombutchers")));
+
+/**************************************************/
 
 app.use("/About", express.static(path.join(__dirname, "About")));
 app.use("/Catering", express.static(path.join(__dirname, "Catering")));

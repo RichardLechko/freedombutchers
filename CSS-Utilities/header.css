@@ -1,3 +1,18 @@
+:root {
+  --dark-violet: hsl(257, 27%, 26%);
+  --gray: hsl(0, 0%, 75%);
+
+  --grayish-violet: hsl(260, 7%, 59%);
+
+  --white: #fff;
+  --bodyBg: #303841;
+  --formBg: #343f4b;
+  --textColor: #fff;
+  --primaryColor: #0076a3;
+  --paraColor: #5e6c79;
+  --paraColor: #74828f;
+}
+
 * {
   padding: 0;
   margin: 0;

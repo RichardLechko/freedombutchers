@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="../CSS-Utilities/reset.css" />
     <link rel="stylesheet" href="../CSS-Utilities/footer.css" />
     <link rel="stylesheet" href="../CSS-Utilities/header.css" />
-    <link rel="stylesheet" href="https://kit.fontawesome.com/34df5f9c2a.css" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" />
-    <script src="index.js"></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Contact</title>
 </head>
@@ -36,16 +36,21 @@
     </div>
 
     <section class="contact-form">
-        <h2 class="heading">Contact Form</h2>
+        <h1 class="heading">Get In Touch!</h1>
 
-        <div class="contactForm">
-            <form action="process_form.php" method="POST">
+        <div class="contactForm" id="contactForm">
+            <form method="POST" action="https://localhost:3000/submit">
                 <input type="text" name="name" class="input" placeholder="Your name" required />
                 <input type="email" name="email" class="input" placeholder="Your email" required />
                 <input type="text" name="subject" class="input" placeholder="Subject" required />
-                <textarea name="message" class="input" cols="30" rows="5" placeholder="Your message..." required></textarea>
+                <textarea name="message" class="input" cols="30" rows="5" placeholder="Your message..."
+                    required></textarea>
                 <input type="submit" class="input submit" value="Send Message" />
             </form>
+
+            <div id="formFeedback" class="form-feedback"></div>
+
+            <div id="linksContainer"></div>
 
             <div class="google-maps">
                 <iframe
@@ -59,30 +64,30 @@
             <div class="method">
                 <i class="fa-solid fa-location-dot contactIcon"></i>
                 <article class="text">
-                    <h2 class="sub-heading">Location</h2>
+                    <h1 class="sub-heading">Location</h1>
                     <p class="para">8600 West 159th Street, Orland Park, IL</p>
                 </article>
             </div>
 
             <div class="method">
-                <a href="mailto:contact@freedombutchers.com"><i class="fa-solid fa-envelope contactIcon"></i></a>
+                <i class="fa-solid fa-envelope contactIcon"></i>
                 <article class="text">
-                    <h2 class="sub-heading">Email</h2>
-                    <p class="para">
-                        <a href="mailto:contact@freedombutchers.com">contact@freedombutchers.com</a>
-                    </p>
+                    <h1 class="sub-heading">Email</h1>
+                    <p class="para">contact@freedombutchers.com</p>
                 </article>
             </div>
 
             <div class="method">
-                <a href="tel:708-966-0543"><i class="fa-solid fa-phone contactIcon"></i></a>
+                <i class="fa-solid fa-phone contactIcon"></i>
                 <article class="text">
-                    <h2 class="sub-heading">Phone</h2>
-                    <p class="para"><a href="tel:708-966-0543">(708)-966-0543</a></p>
+                    <h1 class="sub-heading">Phone</h1>
+                    <p class="para">(708)-966-0543</p>
                 </article>
             </div>
         </div>
     </section>
+
+
 
     <footer>
         <nav>
@@ -115,6 +120,7 @@
             </p>
         </div>
     </footer>
+    <script type="module" src="../client.mjs"></script>
 </body>
 
 </html>

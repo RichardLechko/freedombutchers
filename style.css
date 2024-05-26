@@ -77,43 +77,6 @@ span {
 /*********** YELP **************/
 /*********** YELP **************/
 
-.rating-and-reviews {
-  border-radius: 20px;
-  background-color: #333;
-  color: white;
-  margin-top: 1em;
-  padding: 2em 1em 2em 1em;
-
-  text-align: center;
-  font-size: 2em;
-}
-.rating-and-reviews h2 {
-  padding-bottom: 2em;
-}
-
-.reviews-flex {
-  margin: auto;
-  gap: 5em;
-  justify-content: center;
-  display: flex;
-}
-
-/* @media only screen and (max-width: 1000px) {
-  .slideshow-container {
-    display: none;
-  }
-
-  .rating-and-reviews {
-    display: inline;
-    margin: 2em auto auto auto;
-  }
-} */
-
-/* .test {
-  margin: auto;
-  display: flex;
-} */
-
 .slideshow-container {
   position: relative;
   max-width: 800px;
@@ -124,11 +87,6 @@ span {
   margin-top: 5em;
   display: flex;
   position: relative;
-}
-
-.slides img {
-  max-width: 100%;
-  height: auto;
 }
 
 button.prev,

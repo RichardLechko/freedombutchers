@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  padding: 5em;
+  height: auto;
+  background-color: #333;
+  color: white;
+  outline: 1px solid red;
+  justify-content: space-between;
+}
+
+.container-copyright,
+.github-link {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.container-copyright {
+  margin-right: 1em;
+  text-align: center;
+}
+
+footer nav ul li a {
+  margin-bottom: 1em;
+}
+
+footer a {
+  line-height: 1.5em;
+  color: white;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer nav ul li a,
+.container-copyright,
+.github-link {
+  font-size: 20px;
+}
+
+footer nav {
+  margin-right: 1em;
+}

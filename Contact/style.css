@@ -1,0 +1,156 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+
+  margin: auto;
+}
+
+.heading,
+.sub-heading {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 2.5em;
+}
+
+.sub-heading {
+  text-align: left;
+}
+
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3em;
+}
+
+form {
+  width: 100%;
+  margin-top: 3em;
+}
+
+.imgInput {
+  background: url(images/send.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1em;
+  outline: none;
+  background-color: var(--formBg);
+  color: var(--white);
+  border-radius: 10px;
+  border: 1px solid rgb(53, 53, 53);
+  margin-bottom: 1em;
+}
+
+.input:focus {
+  border: 1px solid var(--primaryColor);
+}
+
+.input::placeholder {
+  text-transform: capitalize;
+}
+
+.heading {
+  margin-top: 2em;
+}
+
+.submit {
+  background-color: var(--primaryColor);
+  border: none;
+  color: var(--textColor);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.contactMethod {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 2em;
+  text-align: left;
+}
+
+.method {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.method .sub-heading {
+  font-size: 1.5em;
+}
+
+.method .para {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.contactIcon {
+  font-size: 2rem;
+  color: var(--primaryColor);
+  width: 70px;
+}
+
+.contact-p p {
+  font-size: 2.25em;
+  color: var(--formBg);
+}
+
+.contact-p {
+  text-align: center;
+  padding: 4em;
+  padding-bottom: 0;
+}
+
+#linksContainer {
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row; /* Stack links vertically */
+  align-items: center; /* Center items horizontally */
+  margin: auto;
+  gap: 1em;
+}
+
+#linksContainer a {
+  background-color: var(--formBg);
+  margin: 0.5em;
+  padding: 1em;
+  font-size: 2em;
+  color: #4798ee;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#linksContainer a:hover {
+  text-decoration: underline;
+  color: #fff; /* Change text color on hover */
+}
+
+#formFeedback {
+  font-size: 2em;
+}
+
+#linksContainer {
+  display: none;
+}

@@ -1,0 +1,76 @@
+:root {
+  --dark-violet: hsl(257, 27%, 26%);
+  --gray: hsl(0, 0%, 75%);
+
+  --grayish-violet: hsl(260, 7%, 59%);
+
+  --white: #fff;
+  --bodyBg: #303841;
+  --formBg: #343f4b;
+  --textColor: #fff;
+  --primaryColor: #0076a3;
+  --paraColor: #5e6c79;
+  --paraColor: #74828f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container-nav a:hover {
+  color: red;
+}
+
+.container-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e0e0e0; /* Background color for navigation container */
+  padding: 10px 0; /* Add padding */
+}
+
+.container-nav nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-nav nav ul li {
+  font-size: 3em;
+  padding: 30px;
+  color: #333;
+  flex-grow: 1;
+  text-align: center;
+  min-width: 120px;
+  font-weight: 700;
+}
+
+header {
+  padding: 0.5em;
+  width: 100%;
+  text-align: center;
+  font-size: 5em;
+
+  background-color: #333; /* Background color for header */
+  color: white; /* Text color */
+}
+
+header {
+  font-weight: 700;
+}

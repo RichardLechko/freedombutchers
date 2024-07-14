@@ -1,0 +1,72 @@
+.container h2 {
+  font-weight: 700;
+  margin-bottom: 1em;
+  width: 100%;
+  border-bottom: 5px solid #333;
+  font-size: 3em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 4em;
+}
+
+.text {
+  flex: 1 1 60%;
+  padding-right: 20px;
+}
+
+.text p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.images {
+  padding: 3em;
+  gap: 2em;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.images .figure img {
+  padding: 10px;
+  border-radius: 55px;
+  border: 1px solid #333;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+
+#grub {
+  max-height: 200px;
+}
+
+#post {
+  width: 400px;
+}
+
+@media only screen and (max-width: 700px) {
+  .images {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .images .figure {
+    padding: 0em 7em 5em 7em;
+    min-width: 100%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .images .figure img,
+  #post {
+    width: 100%;
+  }
+}

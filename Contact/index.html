@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS-Utilities/reset.css" />
+    <link rel="stylesheet" href="../CSS-Utilities/footer.css" />
+    <link rel="stylesheet" href="../CSS-Utilities/header.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Freedom Butchers - Contact</h1>
+    </header>
+    <div class="container-nav">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Menu/index.html">Menu</a></li>
+                <li><a href="../Location/index.html">Location</a></li>
+                <li><a href="../Store-Hours/index.html">Store Hours</a></li>
+                <li><a href="../About/index.html">About</a></li>
+                <li><a href="../Catering/index.html">Catering & Carry Out</a></li>
+                <li><a href="../Weekly-Sales/index.html">Weekly Sales</a></li>
+
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="contact-form">
+        <h1 class="heading">Get In Touch!</h1>
+
+        <div class="contactForm" id="contactForm">
+            <form method="POST" action="https://localhost:3000/submit">
+                <input type="text" name="name" class="input" placeholder="Your name" required />
+                <input type="email" name="email" class="input" placeholder="Your email" required />
+                <input type="text" name="subject" class="input" placeholder="Subject" required />
+                <textarea name="message" class="input" cols="30" rows="5" placeholder="Your message..."
+                    required></textarea>
+                <input type="submit" class="input submit" value="Send Message" />
+            </form>
+
+            <div id="formFeedback" class="form-feedback"></div>
+
+            <div id="linksContainer"></div>
+
+            <div class="google-maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2983.4677318964646!2d-87.83186342352685!3d41.60239628263051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e3ffd4d45ace5%3A0x8c542ccb7cf7d4a5!2sFreedom%20Butchers!5e0!3m2!1sen!2sus!4v1713500321645!5m2!1sen!2sus"
+                    height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="contactMethod">
+            <div class="method">
+                <i class="fa-solid fa-location-dot contactIcon"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Location</h1>
+                    <p class="para">8600 West 159th Street, Orland Park, IL</p>
+                </article>
+            </div>
+
+            <div class="method">
+                <i class="fa-solid fa-envelope contactIcon"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Email</h1>
+                    <p class="para">contact@freedombutchers.com</p>
+                </article>
+            </div>
+
+            <div class="method">
+                <i class="fa-solid fa-phone contactIcon"></i>
+                <article class="text">
+                    <h1 class="sub-heading">Phone</h1>
+                    <p class="para">(708)-966-0543</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Menu/index.html">Menu</a></li>
+                <li><a href="../Location/index.html">Location</a></li>
+                <li><a href="../Store-Hours/index.html">Store Hours</a></li>
+                <li><a href="../About/index.html">About</a></li>
+                <li><a href="../Catering/index.html">Catering & Carry Out</a></li>
+                <li><a href="../Weekly-Sales/index.html">Weekly Sales</a></li>
+
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-copyright">
+            <p>
+                Freedom Butchers &copy;
+                <script>
+                    var today = new Date();
+                    document.write(today.getFullYear());
+                </script>
+                All Rights Reserved
+            </p>
+        </div>
+        <div class="github-link">
+            <p>
+                <a href="https://github.com/RichardLechko" target="_blank">Developed By Richard Lechko</a>
+            </p>
+        </div>
+    </footer>
+    <script type="module" src="../client.mjs"></script>
+</body>
+
+</html>

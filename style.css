@@ -1,0 +1,127 @@
+p {
+  font-size: 1.2em;
+}
+
+.container h2 {
+  font-weight: 700;
+  margin-bottom: 1em;
+  width: 100%;
+  border-bottom: 5px solid #333;
+  font-size: 3em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 4em;
+}
+
+.text {
+  flex: 1 1 60%;
+  padding-right: 20px;
+}
+
+.text p {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.figure {
+  flex: 1 1 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.figure img {
+  width: 250px;
+  height: 250px;
+}
+
+.figure figcaption p {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.hours {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.hours ul {
+  font-weight: 700;
+  line-height: 2em;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 0;
+}
+
+span {
+  border-bottom: 1px solid black;
+}
+
+.text-with-image {
+  display: flex;
+}
+
+.contact-info p {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/*********** YELP **************/
+/*********** YELP **************/
+/*********** YELP **************/
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.slides {
+  margin-top: 5em;
+  display: flex;
+  position: relative;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.review {
+  display: none;
+  width: 100%;
+}
+
+.yelp-review {
+  margin: auto;
+  justify-content: center;
+}
+
+.facebook-review {
+  margin: 0 auto;
+  text-align: left;
+  width: 600px;
+}
